@@ -1,0 +1,10 @@
+package ru.javanerd.solid_springboot_example.service.notification;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SmsNotificationService implements NotificationService {
+    public void sendNotification(String message) {
+        System.out.println("SMS: " + message);
+    }
+}
